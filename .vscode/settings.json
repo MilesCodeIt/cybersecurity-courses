@@ -1,0 +1,21 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    "cSpell.language": "en,fr",
+    "cSpell.words": [
+        "aircrack",
+        "airmonng",
+        "dirb",
+        "ffuf",
+        "gobuster",
+        "metasploit",
+        "MITM",
+        "nmap",
+        "OSINT"
+    ],
+
+    "markdownlint.config": {
+        "MD033": false
+    }
+}

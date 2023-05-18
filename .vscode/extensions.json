@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "yzhang.dictionary-completion",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-french",
+        "davidanson.vscode-markdownlint"
+    ]
+}
