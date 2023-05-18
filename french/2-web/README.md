@@ -24,3 +24,12 @@ On peut parfois trouver une faille qui permet l'execution de code, ou tout simpl
 
 1. Vulnérabilités front-end
     1. [Exposition de données sensibles](./1-vulnerabilite-front-end/1-exposition-de-donnees-sensibles.md)
+    2. [Cross-Site Scripting (XSS)](./1-vulnerabilite-front-end/2-xss.md)
+    3. [Cross-Site Request Forgery (CSRF)](./1-vulnerabilite-front-end/3-csrf.md)
+    4. [Faille dans le contrôle d'accès (Broken Access Control)](./1-vulnerabilite-front-end/4-broken-access-control.md)
+
+2. Vulnérabilités back-end
+    1. Insecure Deserialization (ex: !type checking => req.body command injection)
+    2. Broken Authentication (ex: SQL Injection)
+    3. Security Misconfiguration // apachd -> .htaccess (cgi-bin)
+    4. Using Libraries with Known Vulnerabilities // Lib -> flat (prototype pollution)

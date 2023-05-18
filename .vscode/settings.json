@@ -12,7 +12,9 @@
         "metasploit",
         "MITM",
         "nmap",
-        "OSINT"
+        "osint",
+        "OSINT",
+        "Pentester"
     ],
 
     "markdownlint.config": {

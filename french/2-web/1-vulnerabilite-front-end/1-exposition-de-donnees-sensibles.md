@@ -1,7 +1,6 @@
 # 1. Exposition de données sensibles
 
 <p align="center">
-  <!-- <a href="./README.md">< Introduction & Sommaire</a> - <a href="#"># ></a> -->
   <a href="#"># ></a>
 </p>
 

@@ -10,12 +10,17 @@ Nous allons aborder dans ce chapitre: l'élévation des privilèges
 
 ## Sommaire
 
-1. c2
-    1. Introduction aux c2
-    2. Metasploit
-    3. Cobalt strike
-    4. Havoc
+1. C2
+    1. Introduction aux C2 (Command and Control)
+    2. Examples de C2 (metasploit, cobalt strike, havoc)
 2. Windows
     1. Active Directory
+        1. Comment ça fonctionne ?
+        2. Différentes attaques
     2. Élévation de privilège locale
+        1. WinPEAS
+        2. Exploiter les données reçues par WinPEAS
+
 3. Linux
+    1. Utiliser LinPEAS
+    2. Exploiter les données reçues par LinPEAS
