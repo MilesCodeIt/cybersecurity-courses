@@ -13,7 +13,6 @@
 
 2. Fondamentaux de Linux
     1. [L'architecture](2-fondamentaux-de-linux/1-architecture.md)
-    2. [Les commandes](2-fondamentaux-de-linux/2-commandes.md)
+    2. [Les commandes de base à "connaître"](2-fondamentaux-de-linux/2-commandes.md)
 
-3. Quelques outils
-    1. [liste non exhaustive d'outils](3-quelques-outils/1-liste-doutils.md)
+3. [Quelques outils](3-quelques-outils/1-liste-doutils.md)

@@ -1,4 +1,4 @@
-# 1. liste d'outils utile en cybersécurité
+# 3. Outils 
 
 - Exploitdb:
 Exploitdb est un outil Linux permettant d'avoir accès base de donnée contenant un grand nombre de faille connue de façon hors ligne. Parfois il n'y a pas besoin de s'embêter, une faille connus permet d'avoir un accès sur une machine. Néanmoins, cela ne nous permet pas de l'executer à notre place.
