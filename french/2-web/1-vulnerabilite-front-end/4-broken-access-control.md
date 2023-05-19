@@ -1,5 +1,7 @@
 # 4. Faille dans le contrôle d'accès (Broken Access Control)
 
+Accès à des fonctions dont on est sensé en avoir l'accès dans l'application web.
+
 ## Exemple
 
 Imaginez un blog où tout le monde peut écrire des articles.
@@ -12,5 +14,7 @@ Cela veut dire plusieurs choses :
     - Chaque article doit avoir un ID unique ;
     - L'article que vous avez supprimé avait un ID de `5`.
 
-Maintenant, vous vous demandez ce qu'il se passe si seulement on changeait cette ID dans l'URL !
+Maintenant, vous vous demandez ce qu'il se passe si seulement on changeait cet ID dans l'URL !
 
+Si il y a une faille dans le contrôle d'accès, cela vous permettrez de supprimer n'importe quel
+article tant que vous donnez l'ID de celui-ci.

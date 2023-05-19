@@ -12,4 +12,4 @@ Chaque position défini une puissance de 2. Par exemple le nombre binaire `0b101
 
 ---
 
-# [> 2. IP](./2-ip.md)
+## [> 2. IP](./2-ip.md)

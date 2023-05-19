@@ -1,7 +1,8 @@
 # 2. HTTP (HyperText Transfer Protocol)
 
-Le protocole http est un protocole de communication client-serveur développé pour le World Wide Web
-Les clients les plus connue sont les navigateurs web.abandon
+Le protocole http est un protocole de communication client-serveur développé pour le World Wide Web.
+Les clients les plus connue sont les navigateurs web.
+La variante de HTTP protégée par les protocoles SSL ou TLS (SSL étant le prédécesseur de TLS) s'appelle HTTPS
 
 ## Implementation
 

@@ -33,3 +33,8 @@ On peut parfois trouver une faille qui permet l'execution de code, ou tout simpl
     2. Broken Authentication (ex: SQL Injection)
     3. Security Misconfiguration // apachd -> .htaccess (cgi-bin)
     4. Using Libraries with Known Vulnerabilities // Lib -> flat (prototype pollution)
+
+3. Outils
+    1. [Identifier des ressources cachés avec `ffuf`](./3-outils/1-ffuf.md)
+    2. [Analyser des sites WordPress avec `wpscan`](./3-outils/2-wordpress-analyzer.md)
+    3. [Intercepter et modifier des requêtes avec Burp](./3-outils/3-burp-suite.md)

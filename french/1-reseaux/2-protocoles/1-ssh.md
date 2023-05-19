@@ -5,8 +5,8 @@ C'est un protocole réseau qui permet aux administrateurs d'accéder à distance
 `ssh` est aussi le nom d'un utilitaire qui utilise ce protocole.
 C'est un utilitaire qu'on va utiliser pour acceder à des machines à distance.
 
-## Utilisation: 
+## Utilisation
 
 ```bash
-ssh {username}@{ipaddress}
+ssh {username}@{ip}
 ```
