@@ -47,7 +47,7 @@ Rendez vous de nouveau dans la configuration de Firefox et cette fois-ci dans la
 
 On importe enfin le certificat qu'on a téléchargé précédemment.
 
-![Burp Suite / Voir les certificats dans Firefox](../../_assets/images/burp-suite-8.png)
+![Burp Suite / Import du certificat dans Firefox](../../_assets/images/burp-suite-8.png)
 
 Puis on confirme en disant qu'on croit ce certificat.
 
@@ -57,4 +57,23 @@ Tout est prêt maintenant !
 
 ### Utilisation du Proxy
 
-Maintenant, lorsque vous naviguez sur une URL, 
+Maintenant, à chaque requête envoyée, vous pourrez en voir son contenu/la modifier avant qu'elle soit envoyée.
+
+![Burp Suite / Démo avec une requête sur Google](../../_assets/images/burp-suite-10.png)
+
+Ici, j'ai tout simplement fait une recherche Google: `hello`.
+
+Je peux voir le contenu de ma requête dans Burp et modifier ce que je veux!
+
+Pour l'exemple, je vais changer le paramètre `q` dans l'URL.
+
+![Burp Suite / Démo avec une requête sur Google](../../_assets/images/burp-suite-11.png)
+
+Maintenant je peux cliquer sur **Forward** !
+
+> À noter que **Drop** "lâche" la requête: elle ne la fait pas.
+
+![Burp Suite / Démo avec une requête sur Google](../../_assets/images/burp-suite-12.png)
+
+On peut voir que Google m'a retourné une recherche complètement différente de ce que j'avais initialement tapé
+dans mon navigateur web.
