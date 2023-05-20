@@ -1,6 +1,6 @@
 # 2. IP
 
-## 1. les adresses IP
+## 1. Adresses IP
 
 Une adresse IP permet d'identifier chaque équipement connecté à un réseau informatique
 utilisant le protocole IP.
@@ -18,11 +18,11 @@ Les masques de sous reseau sont sous la même forme que les adresses IP: 4 octet
 
 Il définis le nombre de machines qu'un réseau peut accueillir.
 
-## 3. adresses réseau et broadcast
+## 3. Adresses réseau et Broadcast
 
 L'adresse de reseau est la premiere adresse d'un reseau et l'adresse de broadcast est la dernière.
 
-## 4. sous-réseaux
+## 4. Sous-réseaux
 
 Les sous reseau s'obtiennent en subdivisant un reseau principal.
 
