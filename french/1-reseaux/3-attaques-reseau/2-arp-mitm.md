@@ -1,4 +1,4 @@
-## "Man in the Middle" (MITM)
+# 2. "Man in the Middle" (MITM)
 
 ```bash
 # -T : indique que l'on veut que du texte en sortie (`printf`) (nous utiliserons Wireshark plus tard)
