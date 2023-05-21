@@ -4,6 +4,8 @@ La **cybersécurité** (ou **sécurité informatique)** est l'ensemble des mesur
 
 Le but de la cybersécurité est **d’identifier des vulnérabilités**, trouver des moyens pour détecter des attaques,**mettre en place des systèmes de protection** et enfin, **sensibiliser les utilisateurs** à l'importance de la sécurité informatique.
 
+La **cybersécurité** comprends donc de nombreux domaines de **l'informatique**.
+
 ---
 
 ## [> 2. Métiers](./2-metiers.md)
