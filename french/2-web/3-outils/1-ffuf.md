@@ -1,4 +1,4 @@
-# 3. Identifier des ressources cachés avec `ffuf`
+# 3. Identifier des ressources cachées avec `ffuf`
 
 Premièrement, qu'est-ce que le "fuzzing" ?
 
@@ -30,7 +30,7 @@ ffuf -w ./ma-wordlist -u https://example.org/FUZZ -e .php,.txt,.html
 
 ```bash
 # On définit la méthode à utiliser avec `-X`
-# On définit le body de la requête POST avec `-d`
+# On définit le corps de la requête POST avec `-d`
 ffuf -w ./ma-wordlist -X POST -d “username=admin\&password=FUZZ” -u https://example.org/api/login
 ```
 
