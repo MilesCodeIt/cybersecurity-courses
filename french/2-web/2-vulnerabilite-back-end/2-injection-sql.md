@@ -60,7 +60,7 @@ La réponse donne: `Invalid email or password.`
 On peut tester si il y a une vulnérabilité SQL en tentant de faire une requête en mettant un `'` ou `"`
 dans l'`email`.
 
-Lorsque l'on fais une requête avec un l'email: `'`, on obtient une réponse différente:
+Lorsque l'on fait une requête avec l'email: `'`, on obtient une réponse différente:
 
 ```json
 {
