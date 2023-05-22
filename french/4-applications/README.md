@@ -6,6 +6,8 @@
 
 ## Introduction au chapitre
 
+Nous allons aborder dans ce chapitre: les applications.
+
 ## Sommaire
 
 1. [Reverse engineering](1-reverse-engineering.md)
