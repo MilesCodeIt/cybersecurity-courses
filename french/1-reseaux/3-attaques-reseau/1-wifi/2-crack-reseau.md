@@ -28,20 +28,20 @@ Dans notre cas, nous allons utiliser une Raspberry Pi 4B avec l'image de Kali Li
 Il faut savoir que pour supporter le mode `monitor` sur une RPi, il faut avoir un patch qui est préinstallé
 dans cette image Kali Linux.
 
-#### Appareil "target"
+#### Appareil "cible"
 
 Cet appareil doit être déjà connecté au réseau, c'est "grâce" à lui qu'on va
-récupérer un hash.
+récupérer le handshake.
 
 #### Un réseau Wi-Fi configuré en WPA/WPA2 PSK
 
-Le réseau qu'on va attaquer. L'appareil "target" doit être connecté dessus pour simplifier la procédure.
+Le réseau qu'on va attaquer. L'appareil "cible" doit être connecté dessus pour simplifier la procédure.
 
 ### Passer son interface réseau en mode `monitor` sur l'appareil "attaquant"
 
 On va utiliser la commande `airmon-ng` pour démarrer le mode `monitor` sur l'interface `wlan0`.
 
-> À noter que l'interface Wi-Fi peut changer en fonction de l'appareil,
+> À noter que le nom de l'interface Wi-Fi peut changer en fonction de l'appareil,
 > on peut la récupérer avec la commande `ip addr`.
 
 ```bash
@@ -70,7 +70,7 @@ wlan0mon    ... Mode:Monitor ...
 ### Récupérer le BSSID du réseau qui nous intéresse
 
 On va utiliser la commande `airodump-ng` pour obtenir une liste des réseaux
-disponibles proche de nous depuis notre interface.
+disponibles proche de nous depuis notre interface Wi-Fi.
 
 ```bash
 sudo airodump-ng wlan0mon
@@ -90,10 +90,10 @@ Nous pouvons maintenant obtenir une liste des appareils connectés au réseau, t
 sudo airodump-ng -d BS:SS:ID:AA:BB:CC -w nom_du_fichier_export -c 1 wlan0mon
 ```
 
-Ici, `-d` correspond au BSSID, `-w` le fichier contenant le handshake qu'on va dump et `-c` le channel obtenu précédemment.
+Ici, `-d` correspond au BSSID, `-w` le fichier contenant le handshake qu'on va récupérer et `-c` le channel obtenu précédemment.
 
 Maintenant, si vous vous souvenez, pour obtenir un handshake, il faut qu'un appareil se connecte au réseau.
-Vu que cela peut prendre du temps, on peut accélérer le processus en envoyant des packets de déconnexion vers un appareil, l'appareil "target".
+Vu que cela peut prendre du temps, on peut accélérer le processus en envoyant des packets de déconnexion vers un appareil, l'appareil "cible".
 
 Ainsi, on peut ouvrir un nouveau terminal pour essayer de forcer un appareil à se déconnecter du réseau - on part du principe que l'appareil va automatiquement se reconnecter au réseau.
 
@@ -103,7 +103,7 @@ sudo aireplay-ng -0 0 -a BS:SS:ID:AA:BB:CC -c AA:BB:CC:DD:EE:FF wlan0mon
 
 `-0` veut dire que les packets qu'on veut envoyer sont ceux pour la déconnexion (deauth).
 Le `0` en valeur de `-0` veut dire qu'on envoie un nombre indéterminé de packets.
-`-a` est l'adresse du routeur et `-c` est l'adresse de l'appareil "target".
+`-a` est l'adresse du routeur et `-c` est l'adresse de l'appareil "cible".
 
 On laisse tourner jusqu'à ce qu'on ait `WPA handshake: AA:BB:CC:DD:EE:FF` dans la première ligne de notre premier terminal.
 Lorsque ce message s'affiche, ça veut dire que vous avez capturé un handshake.
@@ -112,7 +112,7 @@ Vous pouvez maintenant fermer tout les terminaux.
 
 ### Cracker le mot de passe en utilisant le handshake capturé
 
-Nous pouvons constater la création de plusieurs fichiers le dossier où la commande a été exécuté.
+Nous pouvons constater la création de plusieurs fichiers dans le dossier où la commande a été exécuté.
 
 Celui que nous utiliserons sera celui qui se termine par l'extension `.cap`.
 
