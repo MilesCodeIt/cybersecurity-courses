@@ -33,9 +33,9 @@ Si l'on rentre `#"><img src=/ onerror=alert(document.cookie)>`, on aura une pop-
 cookies sur le site sur lequel nous avons entré injecté cet élément `img`.
 
 En effet, ici on abuse de l'attribut `onerror` qui exécute une fonction JS si l'image ne peut pas être
-chargé. Ainsi, on rentre une source bidon pour que l'image ne charge jamais et notre fonction est toujours exécuté.
+chargé. Ainsi, on rentre une source bidon pour que l'image ne charge jamais et notre fonction est toujours exécutée.
 
 ## Impact
 
-Si un pirate mal intentionné arrive à trouver une faille XSS qui peut être permanente et visible à tous (stocké dans une base de données, par exemple), l'injection sera faite chez tout le monde.
+Si un pirate mal intentionné arrive à trouver une faille XSS qui peut être permanente et visible à tous (stockée dans une base de données, par exemple), l'injection sera faite chez tout le monde.
 Ainsi l'hacker peut en profiter pour récupérer les cookies et sessions de tout les utilisateurs pour voler des comptes.
