@@ -55,6 +55,16 @@ Puis on confirme en disant qu'on croit ce certificat.
 
 Tout est prêt maintenant !
 
+### Configuration du Proxy pour Chromium
+
+Il y a un navigateur Chromium intégré dans Burp Suite directement qu'on peut
+utiliser en cliquant sur `Open browser` dans l'onglet **Intercept** - dans **Proxy**.
+
+Sinon, vous pouvez passer `--proxy-server=127.0.0.1:8080` en argument lorsque vous utilisez
+un navigateur sous Chromium.
+
+> Exemple avec le package `chromium` sur Kali Linux: `chromium --proxy-server=127.0.0.1:8080`
+
 ### Utilisation du Proxy
 
 Maintenant, à chaque requête envoyée, vous pourrez en voir son contenu/la modifier avant qu'elle soit envoyée.
