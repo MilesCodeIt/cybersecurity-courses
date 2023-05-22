@@ -3,16 +3,16 @@
 Une injection HTML due à de mauvaises vérifications qui permet à n'importe qui d'insérer du code JavaScript dans la page HTML.
 
 Il existe plusieurs type d'attaques XSS, ici on va se concentrer sur le `DOM XSS` qui
-se passe lorsqu'un prompt d'utilisateur est directement écrit dans le HTML.
+se passe lorsque le résultat d'une boite de dialogue donnée à l'utilisateur est directement écrit dans le HTML.
 
 ## Exemple de faille `DOM XSS`
 
 ```html
-<div id="article-content"></div>
+<div id="username-el"></div>
 <button onClick="promptUser()">Cliquez pour entrer un nom d'utilisateur</button>
 ```
 
-Si on affiche le contenu de l'article dans la `div` d'ID `article-content` sans prendre de précautions,
+Si on affiche le contenu de l'article dans la `div` d'ID `username-el` sans prendre de précautions,
 c'est à dire en utilisant directement `innerHTML`, on peut convertir le prompt de l'utilisateur en
 éléments HTML.
 
@@ -21,7 +21,7 @@ On considère le code JS suivant :
 ```javascript
 function promptUser () {
     const userInput = prompt("Entrez un nom d'utilisateur", "");
-    document.getElementById("article-content").innerHTML = "Votre nom d'utilisateur est " + userInput;
+    document.getElementById("username-el").innerHTML = "Votre nom d'utilisateur est " + userInput;
 }
 ```
 
