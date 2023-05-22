@@ -1,6 +1,6 @@
 # 3. Faille dans le contrôle d'accès (Broken Access Control)
 
-Accès à des fonctions dont on est sensé en avoir l'accès dans l'application web.
+Accès à des fonctions dont on est pas sensé avoir accès dans l'application web.
 
 ## Exemple
 
@@ -21,7 +21,7 @@ article tant que vous donnez l'ID de celui-ci.
 
 ## Démonstration avec OWASP Juice Shop + Burp Suite
 
-> On se servira de ce site internet pour notre démonstration, <https://juice-shop.herokuapp.com/#/basket>.
+> On se servira de ce site internet pour notre démonstration, <https://demo.owasp-juice.shop/#/basket>.
 
 Nous devons premièrement être identifié sur le compte administrateur. Pour faire cela, on va utiliser
 [la même injection SQL que dans la partie précédente](./2-injection-sql.md) dans la démo.
