@@ -1,8 +1,10 @@
 # 0. Introduction
 
 <p align="center">
-  <a href="../1-reseaux/README.md">chapitre reseau ></a>
+  <a href="../1-reseaux/README.md">Chapitre 1. Réseaux ></a>
 </p>
+
+---
 
 ## Sommaire
 

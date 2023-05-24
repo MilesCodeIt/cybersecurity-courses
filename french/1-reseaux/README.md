@@ -1,12 +1,18 @@
 # 1. Reseaux
 
 <p align="center">
-  <a href="../0-introduction/README.md">< chapitre d'introduction</a> - <a href="../2-web/README.md">chapitre web ></a>
+  <a href="../0-introduction/README.md">< Chapitre 0. Iintroduction</a> - <a href="../2-web/README.md">Chapitre 2. Web ></a>
 </p>
+
+---
 
 ## Introduction au chapitre
 
-Nous allons aborder dans ce chapitre: les réseaux
+C'est la base d'Internet et des communications aujourd'hui !
+Sans cela, notre cours aurait problablement aucun intérêt.
+
+Il est important de comprendre les bases du fonctionnement d'un
+réseau pour mieux l'attaquer, comprendre pourquoi certaines failles fonctionnent et ainsi comment s'en protéger.
 
 ## Sommaire
 
