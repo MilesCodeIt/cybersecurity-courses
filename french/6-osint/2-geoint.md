@@ -1,4 +1,4 @@
-# 1. GéoINT
+# 2. GéoINT
 
 Le géoint consiste en la recherche d'informations géographiques.
 

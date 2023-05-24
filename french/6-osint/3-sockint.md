@@ -1,4 +1,4 @@
-# 2. SockINT
+# 3. SockINT
 
 Le sockint consiste en la recherche de d'information sur les réseaux sociaux. Ces réseaux regorgent d'informations qui peuvent être tres utile.
 
