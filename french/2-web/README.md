@@ -28,7 +28,7 @@ On peut parfois trouver une faille qui permet l'execution de code, ou tout simpl
     3. [Cross-Site Request Forgery (CSRF)](./1-vulnerabilite-front-end/3-csrf.md)
 
 2. Vulnérabilités back-end
-    1. Insecure Deserialization (ex: !type checking => req.body command injection)
+    1. [Insecure Deserialization](./2-vulnerabilite-back-end/1-insecure-deserialization.md)
     2. [Injection SQL](./2-vulnerabilite-back-end/2-injection-sql.md)
     3. [Faille dans le contrôle d'accès (Broken Access Control)](./2-vulnerabilite-back-end/3-broken-access-control.md)
     4. Security Misconfiguration // apachd -> .htaccess (cgi-bin)

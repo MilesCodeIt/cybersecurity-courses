@@ -96,6 +96,6 @@ rendre la condition toujours vraie.
 `--` est utilisé pour mettre en commentaire le reste de la requête SQL, ainsi la condition
 finale dans le `WHERE` sera `email = '' OR TRUE` qui est donc toujours vrai.
 
-### Avec quel compte sommes nous identifié ?
+### Avec quel compte sommes-nous identifié ?
 
 On peut retourner dans le menu et voir que nous sommes identifié, par chance, sur le compte administrateur !

@@ -2,7 +2,7 @@
 
 Premièrement, qu'est-ce que le "fuzzing" ?
 
-C'est le processus d'envoyer pleins d'inputs aléatoire pour ainsi avoir des erreurs et/ou des sorties inattendues.
+C'est le processus d'envoyer des inputs *aléatoire* pour ainsi avoir des erreurs et/ou des sorties inattendues.
 
 Pour *fuzz*, on aura toujours besoin d'une wordlist. Cette wordlist sera nos "inputs aléatoire".
 
