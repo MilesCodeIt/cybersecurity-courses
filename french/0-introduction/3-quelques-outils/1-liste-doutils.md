@@ -11,3 +11,12 @@ Metasploit est un outils de test de pénétration permettant d'effectuer des att
 
 ## Internet
 Internet regorge d'informations. Si jamais vous êtes confronté a un problème, il est très probable que quelqu'un ai déjà eu le même.
+
+### Pour s'entrainer
+
+- HackTheBox: contient + d'une centaine de challenges sur pleins d'aspects de la CyberSécurité ;
+- VulnHub: contient des machines vulnérables sur lesquelles on peut s'entrainer ;
+
+### Apprendre et/ou s'informer
+
+- HackTricks: livre en ligne où regorge pleins de failles/vulnérabilités qui peuvent être utilisés.
