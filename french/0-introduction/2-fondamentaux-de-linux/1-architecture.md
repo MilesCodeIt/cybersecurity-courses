@@ -4,15 +4,15 @@ Linux est un noyau de système d'exploitation open-source développé à l'origi
 
 Linux n'est composé que de fichiers et de dossiers (ici appelé repertoire). Même les processus, etc...
 
-- Noyau (Kernel) : Le noyau Linux est le cœur du système d'exploitation. c'est lui qui fait la communication en le machine et le logiciel
-- Réseau (Networking) : Linux dispose d'une architecture réseau robuste qui prend en charge divers protocoles de communication, tels que TCP/IP et UDP
+- Noyau (Kernel) : Le noyau Linux est le cœur du système d'exploitation. C'est lui qui fait la communication entre la machine et le logiciel ;
+- Réseau (Networking) : Linux dispose d'une architecture réseau robuste qui prend en charge divers protocoles de communication, tels que TCP/IP et UDP ;
 - Systèmes de fichiers (File Systems) : Linux prend en charge différents systèmes de fichiers, tels que ext4, XFS, etc. Ces systèmes de fichiers organisent et gèrent le stockage des données sur les disques durs, les SSD et autres supports de stockage. Ils fournissent également des fonctionnalités avancées telles que la journalisation, la compression, la cryptographie, etc.
 
 ## Le système de fichiers
 
-Il est organisé sous la forme suivante
+Au niveau de racine, le système est organisé sous la forme suivante...
 
-- Repertoires obligatoire:
+- **Repertoires obligatoires**
   - `bin`: Binaires (comme des executables sous windows) des commandes essentielles
   - `boot`: Fichier static pour le programme d'amorçage (boot loader)
   - `dev`: Fichiers des pilotes de périphériques
@@ -26,6 +26,15 @@ Il est organisé sous la forme suivante
   - `tmp`: Fichiers temporaires
   - `usr`: Hiérarchie secondaire
   - `var`: Données variables
-- Repertoires facultatifs:
+- **Repertoires facultatifs**
   - `home`: Répertoire personnel des utilisateurs
-  - `root`: Répertoire personnel de l'utilisateur root
+  - `root`: Répertoire personnel de l'utilisateur `root`
+
+Le système de fichiers est representé sous la forme d'un arbre.
+
+Pour naviguer à travers celui-ci, on utilise...
+
+- `.` (ou `./`) qui signifie "(dans) le dossier courant" ;
+- `..` (ou `../`) qui signifie "(dans) le dossier parent" ;
+- `~` qui redirige vers le répertoire personnel de l'utilisateur qui exécute la commande.
+
