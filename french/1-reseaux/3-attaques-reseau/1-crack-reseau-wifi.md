@@ -1,4 +1,4 @@
-# 2. Crack de réseaux Wi-Fi
+# 1. Crack de réseaux Wi-Fi
 
 Dans ce cours, nous allons nous intéresser seulement au WPA/WPA2 pour éviter de trop s'étaler sur la durée.
 
