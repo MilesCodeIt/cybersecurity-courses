@@ -30,11 +30,10 @@ Au niveau de racine, le système est organisé sous la forme suivante...
   - `home`: Répertoire personnel des utilisateurs
   - `root`: Répertoire personnel de l'utilisateur `root`
 
-Le système de fichiers est representé sous la forme d'un arbre.
+Le système de fichiers est représenté sous la forme d'un arbre.
 
 Pour naviguer à travers celui-ci, on utilise...
 
 - `.` (ou `./`) qui signifie "(dans) le dossier courant" ;
 - `..` (ou `../`) qui signifie "(dans) le dossier parent" ;
 - `~` qui redirige vers le répertoire personnel de l'utilisateur qui exécute la commande.
-
