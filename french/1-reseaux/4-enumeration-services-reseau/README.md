@@ -1,35 +1,69 @@
 # 4. Enumeration de services reseau
 
-Énumérer ces services peuvent nous permettre de trouver des applications vulnérables sur la machine victime.
+Énumérer les services exposés d'une machine dans un réseau peuvent nous permettre de trouver des vulnérabilités sur celle-ci.
 
-## L'outils principal: NMap
+Pour cela, nous allons utiliser `nmap`.
 
-### Description
+`nmap` (Network Mapper) est un scanner de ports libre. Il est conçu pour détecter les ports ouverts, identifier les services hébergés et obtenir des informations sur le système d'exploitation d'une machine, par exemple.
 
-NMap (Network Mapper) est un scanner de ports libre. Il est conçu pour détecter les ports ouverts, identifier les services hébergés et obtenir des informations sur le système d'exploitation d'un ordinateur distant.
 
-### Utilisation
+## Faire un scan des machines du réseau
 
-```bash
-nmap -sV --open -oA ./scans/{fichiers_de_sortie}_scan_initial {IP} 
-```
+> Pour les exemples qui vont suivre, on va prendre le réseau `192.168.1.0/24` pour
+> une meilleure visualisation.
 
-=> Scanne les 100 ports les plus souvent ouvert.
+Cela nous permet d'identifier l'IP d'une machine sur le réseau.
 
 ```bash
-nmap -p- --open -oA ./scans/{fichiers_de_sortie}_full_tcp_scan {IP} 
+nmap 192.168.1.*
 ```
 
-=> Scanne tous les port pour être sur d'en louper aucun.
+*ou*
 
 ```bash
-nmap -sC -p 22,80 -oA ./scans/{fichiers_de_sortie}_script_scan {IP} 
+nmap 192.168.1.0/24
 ```
 
-=> Scanne les ports 22 et 80 en utilisant les scripts par default.
+Les deux commandes font la même chose.
+
+Si l'on veut juste faire un mini scan rapide, sans avoir aucune information sur les ports, on peut utiliser l'argument `-sn` qui désactive le scan des ports.
 
 ```bash
-nmap -sV --script=http-enum -oA ./scans/{fichiers_de_sortie}_nmap_http_enum {IP}
+nmap -sn 192.168.1.*
 ```
 
-=> Scanne en utilisant le script http-enum
+## Export des résultats dans un fichier
+
+> On utilisera un dossier `scans` pour les exports.
+
+On peut utiliser l'argument `-oA` suivi de la destination du fichier.
+
+```bash
+nmap -oA ./scans/NOM_scan_initial IP_MACHINE 
+```
+
+## Scanner tout les ports.
+
+On utilise les arguments `-p-` pour dire que l'on veut scanner tout les ports et `--open` pour demander à n'afficher que les ports ouverts et/ou possiblement ouverts.
+
+```bash
+nmap -p- --open -oA ./scans/NOM_full_tcp_scan IP_MACHINE
+```
+
+## Utiliser un script lors du scan
+
+L'argument `--script` permet de définir le(s) script(s) que nmap va utiliser durant le scan.
+
+```bash
+nmap -sV --script=http-enum -oA ./scans/NOM_scrip_http_enum IP_MACHINE
+```
+
+## Scanner seulement des ports spécifiques en utilisant les scripts par défaut
+
+Ici, on va scanner seulement les ports 22 et 80, en utilisant l'argument `-p`.
+
+L'argument `-sC` revient à écrire `--script=default`.
+
+```bash
+nmap -sC -p 22,80 -oA ./scans/NOM_22,80_scan IP_MACHINE
+```
