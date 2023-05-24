@@ -31,10 +31,9 @@ On peut parfois trouver une faille qui permet l'execution de code, ou tout simpl
     1. [Insecure Deserialization](./2-vulnerabilite-back-end/1-insecure-deserialization.md)
     2. [Injection SQL](./2-vulnerabilite-back-end/2-injection-sql.md)
     3. [Faille dans le contrôle d'accès (Broken Access Control)](./2-vulnerabilite-back-end/3-broken-access-control.md)
-    4. Security Misconfiguration // apachd -> .htaccess (cgi-bin)
-    5. Using Libraries with Known Vulnerabilities // Lib -> flat (prototype pollution)
+    4. [Utilisation de librairies avec des vulnérabilités connues](./2-vulnerabilite-back-end/4-librairies-known-vulnerabilities.md)
 
 3. Outils
     1. [Identifier des ressources cachés avec `ffuf`](./3-outils/1-ffuf.md)
     2. [Analyser des sites WordPress avec `wpscan`](./3-outils/2-wordpress-analyzer.md)
-    3. [Intercepter et modifier des requêtes avec Burp](./3-outils/3-burp-suite.md)
+    3. [Intercepter et modifier des requêtes avec Burp Suite](./3-outils/3-burp-suite.md)
