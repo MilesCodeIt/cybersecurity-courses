@@ -7,9 +7,7 @@
 4. [Applications](./4-applications/README.md)
 5. [Malware](./5-malware/README.md)
 6. [OSINT](./6-osint/README.md)
-7. [Forensic](./7-forensic/README.md)
-8. [CTF](./8-ctf/README.md)
-9. Conclusion
+7. Conclusion
 
 <!-- 
 ## 2. Web

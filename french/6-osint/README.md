@@ -16,8 +16,9 @@ Nous verrons seulement une liste d'outils.
 
 ## Sommaire
 
-1. [GeoINT](1-geoint.md)
-2. [SockINT](2-sockint.md)
-3. [GoogleDork](3-google-dork.md)
-4. [Sites web](4-web.md)
-5. [Listes d'outils](5-liste-outils.md)
+1. [Images](1-images.md)
+2. [GeoINT](2-geoint.md)
+3. [SockINT](3-sockint.md)
+4. [GoogleDork](4-google-dork.md)
+5. [Sites web](5-web.md)
+6. [Listes d'outils](6-liste-outils.md)

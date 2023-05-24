@@ -1,4 +1,4 @@
-# 3. Google Dork
+# 4. Google Dork
 
 Le google dorking est une technique consistant à utiliser un moteur de recherche, généralement Google, en vue de chercher des vulnérabilités ou de récupérer des données sensibles.
 
