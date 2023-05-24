@@ -1,37 +1,37 @@
-# Utiliser Linpeas
+# Utiliser LinPEAS
 
-Linpeas est un utilitaire nous permettant de trouver plusieurs faille sur un systeme linux nous permettant d'élever nos privilèges.
+LinPEAS est un utilitaire nous permettant de trouver plusieurs faille sur un systeme linux nous permettant d'élever nos privilèges.
 
 ## Utilisation
 
 ``` bash
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20230521-bc39a477/linpeas.sh -O linpeas.sh
+wget https://linpeas.sh/ -O linpeas.sh
 ```
 
-Nous pouvons maintenant lancer `linpeas.sh`
+Nous pouvons maintenant lancer `linpeas.sh` sur la machine que l'on veut inspecter.
 
 ## Analyse détaillé
 
 ### Informations sur le système
 
-- tous les détails utiles sur le système d'exploitation et sa distribution, les versions et les mises à jour
-- la version sudo
-- si le système fonctionne à partir d'une VM (et de quel système il s'agit)
+- Tous les détails utiles sur le système d'exploitation, sa distribution, les versions et les mises à jour ;
+- La version de `sudo` ;
+- Si le système fonctionne à partir d'une VM - et de quel système il s'agit.
 
-#### Alternatives
-
-```console
-$ lsb_release -a 
-$ hostnamectl # includes virtualization info
-
-$ sudo --version
-```
+> Alternative pour savoir si le système fonctionne à partir d'une VM
+> 
+> ```console
+> $ lsb_release -a 
+> $ hostnamectl # includes virtualization info
+>
+> $ sudo --version
+> ```
 
 ### Logiciels disponibles
 
-- liste des logiciels accessibles choisis dans la liste prédéfinie :
+Liste des logiciels accessibles choisis dans la liste prédéfinie...
 
-```bash
+```
 nmap aws nc ncat netcat nc.traditional wget curl ping gcc g++ make gdb base64 socat python python2 python3 python2.7 python2.6 python3.6 python3.7 perl php ruby xterm doas sudo fetch ctr
 ```
 

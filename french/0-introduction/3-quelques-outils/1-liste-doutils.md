@@ -15,8 +15,9 @@ Internet regorge d'informations. Si jamais vous êtes confronté a un problème,
 ### Pour s'entrainer
 
 - HackTheBox: contient + d'une centaine de challenges sur pleins d'aspects de la CyberSécurité ;
-- VulnHub: contient des machines vulnérables sur lesquelles on peut s'entrainer ;
+- VulnHub: contient des machines vulnérables sur lesquelles on peut s'entrainer.
 
-### Apprendre et/ou s'informer
+### Outils
 
-- HackTricks: livre en ligne où regorge pleins de failles/vulnérabilités qui peuvent être utilisés.
+- [HackTricks](https://book.hacktricks.xyz/): livre en ligne où regorge pleins de failles/vulnérabilités qui peuvent être utilisés ;
+- [GTFOBins](https://gtfobins.github.io/): liste de logiciels sous Linux qui peuvent être contournés pour faire de l'escalation de privilège sur des systèmes mal configurés.
